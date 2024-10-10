@@ -17,3 +17,14 @@ for what interface this is expected to have.
 If the function `ui_utils.show_hud_message` is present, it is used to notify when a key has been
 bound from one of the raw presses from above. This function should take a title as the first arg and
 a message as the second (both positionally), and show them in a temporary message on screen.
+
+# Changelog
+
+### v1.4
+- Grouped options with no visible children no longer show their header.
+- Swap known controller key names between UE3/UE4 versions, based on game.
+  
+### Older
+Versions 1.0 through 1.3 were developed as part of the
+[oak-mod-manager](https://github.com/bl-sdk/oak-mod-manager/blob/master/changelog.md#v14), see it
+for a full changelog.
