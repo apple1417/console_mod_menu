@@ -1,8 +1,9 @@
 from dataclasses import dataclass, field
 from typing import Literal
 
-from console_mod_menu.draw import draw
 from mods_base import Mod, get_ordered_mod_list, html_to_plain_text
+
+from console_mod_menu.draw import draw
 
 from . import (
     AbstractScreen,

@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
-from console_mod_menu.draw import draw
 from mods_base import capture_next_console_line
+
+from console_mod_menu.draw import draw
 
 
 @dataclass

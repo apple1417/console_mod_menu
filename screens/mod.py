@@ -1,10 +1,6 @@
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field
 
-from unrealsdk import logging
-
-from console_mod_menu.draw import draw, draw_description
-from console_mod_menu.option_formatting import draw_option_header, get_option_value_str
 from mods_base import (
     JSON,
     BaseOption,
@@ -20,6 +16,10 @@ from mods_base import (
     SpinnerOption,
     ValueOption,
 )
+from unrealsdk import logging
+
+from console_mod_menu.draw import draw, draw_description
+from console_mod_menu.option_formatting import draw_option_header, get_option_value_str
 
 from . import (
     AbstractScreen,
