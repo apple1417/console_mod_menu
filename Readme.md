@@ -21,8 +21,9 @@ a message as the second (both positionally), and show them in a temporary messag
 # Changelog
 
 ### v1.4
-- Grouped options with no visible children no longer show their header.
+- Improved suggestions when trying to bind a key by name, and misspelling it.
 - Swap known controller key names between UE3/UE4 versions, based on game.
+- Grouped options with no visible children no longer show their header.
   
 ### Older
 Versions 1.0 through 1.3 were developed as part of the
