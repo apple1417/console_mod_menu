@@ -21,6 +21,7 @@ a message as the second (both positionally), and show them in a temporary messag
 # Changelog
 
 ### v1.5
+- Support host-only coop support value
 - Linting fixes
 
 ### v1.4
