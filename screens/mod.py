@@ -36,7 +36,7 @@ from .option import BoolOptionScreen, ButtonOptionScreen, ChoiceOptionScreen, Sl
 class OptionListScreen(AbstractScreen):
     mod: Mod
 
-    drawn_options: list[BaseOption] = field(default_factory=list, init=False)
+    drawn_options: list[BaseOption] = field(default_factory=list[BaseOption], init=False)
 
     @staticmethod
     def any_option_visible(options: Sequence[BaseOption]) -> bool:
@@ -94,7 +94,7 @@ class OptionListScreen(AbstractScreen):
                         stack.pop()
 
                 case ValueOption():
-                    j_option: ValueOption[JSON] = option
+                    j_option: ValueOption[JSON] = option  # pyright: ignore[reportUnknownVariableType]
 
                     draw(
                         f"[{drawn_idx}] {option.display_name} ({get_option_value_str(j_option)})",

@@ -19,7 +19,7 @@ from .mod import ModScreen
 class HomeScreen(AbstractScreen):
     name: Literal["Mods"] = "Mods"  # pyright: ignore[reportIncompatibleVariableOverride]
 
-    drawn_mod_list: list[Mod] = field(default_factory=list, init=False)
+    drawn_mod_list: list[Mod] = field(default_factory=list[Mod], init=False)
 
     def draw(self) -> None:  # noqa: D102
         draw_stack_header()
