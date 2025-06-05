@@ -21,7 +21,7 @@ a message as the second (both positionally), and show them in a temporary messag
 # Changelog
 
 ### v1.6
-- Linting fixes.
+- Made Willow1 use UE3 controller key names.
 
 ### v1.5
 - Support host-only coop support value.
