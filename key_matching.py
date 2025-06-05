@@ -172,9 +172,11 @@ KNOWN_KEYS: set[str] = {
     "Y",
     "Z",
     "Zero",
-    *(KNOWN_UE3_CONTROLLER_KEYS
-      if Game.get_tree() in [Game.Willow1, Game.Willow2]
-      else KNOWN_UE4_CONTROLLER_KEYS),
+    *(
+        KNOWN_UE3_CONTROLLER_KEYS
+        if Game.get_tree() in [Game.Willow1, Game.Willow2]
+        else KNOWN_UE4_CONTROLLER_KEYS
+    ),
 }
 
 # endregion
